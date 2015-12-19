@@ -1,0 +1,80 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-image: url(../assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #000;
+}
+.container {
+  /*background-color: #eee;
+  opacity: 0.9;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;*/
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.tab-pane {
+  background-color: #eee;
+}
+.nav-tabs>li.active>a:focus {
+  background-color: #eee;
+}
+.nav-tabs>li.active>a {
+  background-color: #eee;
+}
+.tab-pane div {
+  display: inline-block;
+  margin: 5px 15px;
+}
+h1 {
+  font-size: 12.4vw;
+}
+.hidden {
+  visibility: hidden;
+}
+.description:first-letter {
+  text-transform: capitalize;
+}
+#forecast_now .icon {
+  float: left;
+  position: relative;
+  top: -5px;
+}
+.rainfall {
+  clear: both;
+}
+.temperature {
+  font-weight: bold;
+  font-size: 17px;
+}
+#forecast_future {
+  display: none;
+  background-color: #eee;
+  opacity: 0.98;
+}
+#location {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.center {
+  text-align: center;
+}
+.new-search {
+  display: none;
+  margin-top: 20px;
+}
+.error {
+  display: none;
+}
+@media (min-width:480px) {
+  h1 {
+    font-size: 36px;
+  }
+}
