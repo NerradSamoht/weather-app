@@ -1,6 +1,6 @@
 $(function() {
   var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thurs', 'Fri', 'Sat'];
-  var icon = "http://openweathermap.org/img/w/";
+  var icon = "https://openweathermap.org/img/w/";
   var api_key = "566239d88d9403aacbbb9dc5b0e2fec2";
   var imageUrl = "assets/bg_rain.jpg";
 
@@ -12,7 +12,7 @@ $(function() {
     if (location != "") {
 
       // Get current weather
-      $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=metric&APPID=" + api_key, function(data) {
+      $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=metric&APPID=" + api_key, function(data) {
 
         if (data.cod == 404) {
 
@@ -41,7 +41,7 @@ $(function() {
           $('.description').html(forecast_now);
 
           // Get future forecast
-          $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + location + "&units=metric&APPID=" + api_key, function(data) {
+          $.getJSON("https://api.openweathermap.org/data/2.5/forecast?q=" + location + "&units=metric&APPID=" + api_key, function(data) {
 
             $.each(data.list, function(i, item) {
 
